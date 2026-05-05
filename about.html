@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Selena Harvey - Licensed Medical Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <span data-i18n="trust_licensed">✓ Licensed Medical Professional</span>
+      <span data-i18n="trust_personalized">✓ Personalized Treatment</span>
+      <span data-i18n="trust_confidential">✓ 100% Confidential</span>
+      <span data-i18n="trust_support">✓ Full Support</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">👩‍⚕️</span>
+        <span data-i18n="selena_name">Selena Harvey</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav_home">Success Stories</a>
+        <a href="about.html" class="active" data-i18n="nav_about">About Selena</a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+          <button class="lang-btn" onclick="switchLang('ar')">AR</button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" data-i18n="nav_home">Success Stories</a>
+    <a href="about.html" data-i18n="nav_about">About Selena</a>
+    <div class="lang-switcher" style="padding: 0.75rem 0;">
+      <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+      <button class="lang-btn" onclick="switchLang('ar')">AR</button>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 data-i18n="about_title">About Selena Harvey</h1>
+      <p data-i18n="about_subtitle">Licensed professional helping men reclaim their confidence</p>
+    </div>
+  </section>
+
+  <!-- About Section with Side Images -->
+  <section class="about-section">
+    <!-- Left Side Images -->
+    <div class="side-images-outer left-outer">
+      <div class="outer-image">
+        <img src="images/work2.jpg" alt="Work">
+      </div>
+      <div class="outer-image">
+        <img src="images/work3.jpg" alt="Work">
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="about-content">
+        <!-- Selena Profile -->
+        <div class="about-card selena-profile">
+          <div class="profile-image">
+            <img src="images/selena.jpg" alt="Selena Harvey">
+          </div>
+          <div class="profile-info">
+            <h2 data-i18n="selena_name">Selena Harvey</h2>
+            <p class="profile-title" data-i18n="selena_title">Licensed Medical Consultant | Men's Health Specialist</p>
+            <div class="profile-divider"></div>
+            <p data-i18n="about_intro1">I'm Selena Harvey, and for over a decade, I've dedicated my career to helping men overcome erectile dysfunction and reclaim their confidence. I understand how deeply this issue affects not just your physical health, but your relationships, self-esteem, and overall quality of life.</p>
+            <p data-i18n="about_intro2">What sets my practice apart is personalized care. I don't believe in one-size-fits-all solutions. Every man who reaches out to me receives individual attention, a thorough assessment, and a customized treatment plan designed specifically for his body, lifestyle, and goals.</p>
+            <p data-i18n="about_intro3">My mission is simple: to help you get your life back. No judgment, no embarrassment—just professional medical care that works.</p>
+          </div>
+        </div>
+
+        <!-- Qualifications -->
+        <div class="about-card qualifications-card">
+          <div class="qualifications-content">
+            <h2 data-i18n="qual_title">Qualifications & Credentials</h2>
+            <div class="qualification-list">
+              <div class="qual-item">
+                <span class="qual-icon">📜</span>
+                <div>
+                  <h4 data-i18n="qual1_title">Master's Degree in Medicine</h4>
+                  <p data-i18n="qual1_desc">Graduated from a top-tier medical school with specialization in men's health</p>
+                </div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-icon">🏆</span>
+                <div>
+                  <h4 data-i18n="qual2_title">Board Certified</h4>
+                  <p data-i18n="qual2_desc">Licensed medical professional with certifications in sexual health</p>
+                </div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-icon">📚</span>
+                <div>
+                  <h4 data-i18n="qual3_title">Continuing Education</h4>
+                  <p data-i18n="qual3_desc">Regular attendance at international medical conferences to stay current</p>
+                </div>
+              </div>
+              <div class="qual-item">
+                <span class="qual-icon">⭐</span>
+                <div>
+                  <h4 data-i18n="qual4_title">10+ Years Experience</h4>
+                  <p data-i18n="qual4_desc">Over 5,000 men helped with a 99% satisfaction rate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="qualifications-image">
+            <img src="images/card.png" alt="Credentials Card">
+          </div>
+        </div>
+
+        <!-- My Approach -->
+        <div class="about-card">
+          <h2 data-i18n="approach_title">My Approach</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="feature-icon">1</div>
+              <h3 data-i18n="approach1_title">Personalized Care</h3>
+              <p data-i18n="approach1_desc">No two men are alike. Every treatment plan is tailored to your unique needs and health profile.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">2</div>
+              <h3 data-i18n="approach2_title">Full Support</h3>
+              <p data-i18n="approach2_desc">I'm with you every step of the way. Regular check-ins, adjustments, and unlimited questions.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">3</div>
+              <h3 data-i18n="approach3_title">Total Confidentiality</h3>
+              <p data-i18n="approach3_desc">Your privacy is sacred. All consultations are 100% confidential with discreet communication.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">4</div>
+              <h3 data-i18n="approach4_title">Results Focused</h3>
+              <p data-i18n="approach4_desc">I only recommend what actually works. No gimmicks, no overpriced placebos—just proven solutions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Our Clinic -->
+        <div class="about-card">
+          <h2 data-i18n="clinic_title">Our Clinic</h2>
+          <div class="work-image">
+            <img src="images/work.jpg" alt="Our Clinic">
+          </div>
+          <p style="margin-top: 1rem; color: var(--gray-600);" data-i18n="clinic_desc">Our professional medical facility meets the highest standards of cleanliness, safety, and patient comfort. Every procedure follows strict medical protocols.</p>
+        </div>
+
+        <!-- Our Team -->
+        <div class="about-card">
+          <h2 data-i18n="about_team_title">Our Team</h2>
+          <div class="team-gallery">
+            <div class="team-photo">
+              <img src="images/team.jpg" alt="Our Team">
+            </div>
+            <div class="team-photo">
+              <img src="images/team2.jpg" alt="Our Team">
+            </div>
+            <div class="team-photo">
+              <img src="images/team3.jpg" alt="Our Team">
+            </div>
+          </div>
+          <p style="margin-top: 1.5rem; color: var(--gray-600); text-align: center;" data-i18n="about_team_desc">A dedicated team of medical professionals committed to helping men reclaim their confidence and vitality.</p>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="about-card contact-card">
+          <h2 data-i18n="contact_title">Contact Me</h2>
+          <p data-i18n="contact_desc">Ready to start your journey? Reach out today for a confidential consultation.</p>
+          <div class="contact-info-large">
+            <div class="contact-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <span class="contact-label" data-i18n="contact_whatsapp">WhatsApp</span>
+                <span class="contact-value">XXXXXXX</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⏰</span>
+              <div>
+                <span class="contact-label" data-i18n="contact_hours">Hours</span>
+                <span class="contact-value">9AM - 10PM EST</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🌍</span>
+              <div>
+                <span class="contact-label" data-i18n="contact_area">Service Area</span>
+                <span class="contact-value" data-i18n="contact_nationwide">Nationwide</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side Images -->
+    <div class="side-images-outer right-outer">
+      <div class="outer-image">
+        <img src="images/work4.jpg" alt="Work">
+      </div>
+      <div class="outer-image">
+        <img src="images/work5.jpg" alt="Work">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 data-i18n="selena_name">Selena Harvey</h3>
+          <p>
+            <span data-i18n="footer_tagline">Helping men reclaim their confidence and vitality</span><br>
+            <span data-i18n="footer_stories">Over 5,000 success stories and counting</span>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer_contact">Contact</h4>
+          <p>📱 <span data-i18n="footer_whatsapp">WhatsApp: XXXXXXX</span></p>
+          <p>⏰ <span data-i18n="footer_hours">Hours: 9AM - 10PM EST</span></p>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer_promise">Our Promise</h4>
+          <p>
+            ✓ <span data-i18n="trust_licensed">Licensed Medical Professional</span><br>
+            ✓ <span data-i18n="trust_confidential">100% Confidential</span><br>
+            ✓ <span data-i18n="trust_personalized">Personalized Treatment</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2024 Selena Harvey | All stories shared with permission | Individual results may vary</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Translations
+    const translations = {
+      en: {
+        trust_licensed: "Licensed Medical Professional",
+        trust_personalized: "Personalized Treatment",
+        trust_confidential: "100% Confidential",
+        trust_support: "Full Support",
+        selena_name: "Selena Harvey",
+        selena_title: "Licensed Medical Consultant | Men's Health Specialist",
+        nav_home: "Success Stories",
+        nav_about: "About Selena",
+        about_title: "About Selena Harvey",
+        about_subtitle: "Licensed professional helping men reclaim their confidence",
+        about_intro1: "I'm Selena Harvey, and for over a decade, I've dedicated my career to helping men overcome erectile dysfunction and reclaim their confidence. I understand how deeply this issue affects not just your physical health, but your relationships, self-esteem, and overall quality of life.",
+        about_intro2: "What sets my practice apart is personalized care. I don't believe in one-size-fits-all solutions. Every man who reaches out to me receives individual attention, a thorough assessment, and a customized treatment plan designed specifically for his body, lifestyle, and goals.",
+        about_intro3: "My mission is simple: to help you get your life back. No judgment, no embarrassment—just professional medical care that works.",
+        qual_title: "Qualifications & Credentials",
+        qual1_title: "Master's Degree in Medicine",
+        qual1_desc: "Graduated from a top-tier medical school with specialization in men's health",
+        qual2_title: "Board Certified",
+        qual2_desc: "Licensed medical professional with certifications in sexual health",
+        qual3_title: "Continuing Education",
+        qual3_desc: "Regular attendance at international medical conferences to stay current",
+        qual4_title: "10+ Years Experience",
+        qual4_desc: "Over 5,000 men helped with a 99% satisfaction rate",
+        approach_title: "My Approach",
+        approach1_title: "Personalized Care",
+        approach1_desc: "No two men are alike. Every treatment plan is tailored to your unique needs and health profile.",
+        approach2_title: "Full Support",
+        approach2_desc: "I'm with you every step of the way. Regular check-ins, adjustments, and unlimited questions.",
+        approach3_title: "Total Confidentiality",
+        approach3_desc: "Your privacy is sacred. All consultations are 100% confidential with discreet communication.",
+        approach4_title: "Results Focused",
+        approach4_desc: "I only recommend what actually works. No gimmicks, no overpriced placebos—just proven solutions.",
+        clinic_title: "Our Clinic",
+        clinic_desc: "Our professional medical facility meets the highest standards of cleanliness, safety, and patient comfort. Every procedure follows strict medical protocols.",
+        about_team_title: "Our Team",
+        about_team_desc: "A dedicated team of medical professionals committed to helping men reclaim their confidence and vitality.",
+        contact_title: "Contact Me",
+        contact_desc: "Ready to start your journey? Reach out today for a confidential consultation.",
+        contact_whatsapp: "WhatsApp",
+        contact_hours: "Hours",
+        contact_area: "Service Area",
+        contact_nationwide: "Nationwide",
+        footer_tagline: "Helping men reclaim their confidence and vitality",
+        footer_stories: "Over 5,000 success stories and counting",
+        footer_contact: "Contact",
+        footer_whatsapp: "WhatsApp: XXXXXXX",
+        footer_hours: "Hours: 9AM - 10PM EST",
+        footer_promise: "Our Promise",
+        footer_copy: "© 2024 Selena Harvey | All stories shared with permission | Individual results may vary"
+      },
+      ar: {
+        trust_licensed: "أخصائي طبي مرخص",
+        trust_personalized: "علاج مخصص",
+        trust_confidential: "100% سرية",
+        trust_support: "دعم كامل",
+        selena_name: "سيلينا هارفي",
+        selena_title: "استشارية طبية مرخصة | أخصائية صحة الرجال",
+        nav_home: "قصص النجاح",
+        nav_about: "عن سيلينا",
+        about_title: "عن سيلينا هارفي",
+        about_subtitle: "أخصائية مرخصة تساعد الرجال على استعادة ثقتهم",
+        about_intro1: "أنا سيلينا هارفي، وعلى مدار أكثر من عقد، كرست حياتي المهنية لمساعدة الرجال على التغلب على ضعف الانتصاب واستعادة ثقتهم بأنفسهم. أفهم كيف تؤثر هذه المشكلة بعمق ليس فقط على صحتك البدنية، بل على علاقاتك وتقديرك لذاتك وجودة حياتك بشكل عام.",
+        about_intro2: "ما يميز ممارستي هو الرعاية الشخصية. لا أؤمن بالحلول الجاهزة. كل رجل يتواصل معي يحصل على اهتمام فردي، وتقييم شامل، وخطة علاج مخصصة مصممة خصيصاً لجسده وأسلوب حياته وأهدافه.",
+        about_intro3: "مهمتي بسيطة: مساعدتك في استعادة حياتك. لا أحكام، لا إحراج—فقط رعاية طبية مهنية تعمل.",
+        qual_title: "المؤهلات والشهادات",
+        qual1_title: "درجة الماجستير في الطب",
+        qual1_desc: "تخرجت من كلية طبية من الطراز الأول بتخصص في صحة الرجال",
+        qual2_title: "معتمدة من المجلس",
+        qual2_desc: "أخصائية طبية مرخصة مع شهادات في الصحة الجنسية",
+        qual3_title: "التعليم المستمر",
+        qual3_desc: "حضور منتظم للمؤتمرات الطبية الدولية للبقاء على اطلاع",
+        qual4_title: "أكثر من 10 سنوات خبرة",
+        qual4_desc: "تمت مساعدة أكثر من 5,000 رجل مع معدل رضا 99%",
+        approach_title: "نهجي",
+        approach1_title: "رعاية شخصية",
+        approach1_desc: "لا يوجد رجلان متشابهان. كل خطة علاج مخصصة لتناسب احتياجاتك الفريدة وملفك الصحي.",
+        approach2_title: "دعم كامل",
+        approach2_desc: "أنا معك في كل خطوة على الطريق. فحوصات دورية، تعديلات، وأسئلة غير محدودة.",
+        approach3_title: "سرية تامة",
+        approach3_desc: "خصوصيتك مقدسة. جميع الاستشارات سرية 100% مع تواصل محترم.",
+        approach4_title: "تركيز على النتائج",
+        approach4_desc: "أوصي فقط بما يعمل فعلاً. لا حيل، لا أدوية وهمية بأسعار مبالغ فيها—فقط حلول مثبتة.",
+        clinic_title: "عيادتنا",
+        clinic_desc: "تلبي منشأتنا الطبية المحترفة أعلى معايير النظافة والسلامة وراحة المرضى. كل إجراء يتبع بروتوكولات طبية صارمة.",
+        about_team_title: "فريقنا",
+        about_team_desc: "فريق طبي متخصص ملتزم بمساعدة الرجال على استعادة ثقتهم وحيويتهم.",
+        contact_title: "اتصل بي",
+        contact_desc: "مستعد لبدء رحلتك؟ تواصل اليوم للحصول على استشارة سرية.",
+        contact_whatsapp: "واتساب",
+        contact_hours: "ساعات العمل",
+        contact_area: "منطقة الخدمة",
+        contact_nationwide: "على المستوى الوطني",
+        footer_tagline: "مساعدة الرجال على استعادة ثقتهم وحيويتهم",
+        footer_stories: "أكثر من 5,000 قصة نجاح وعدد متزايد",
+        footer_contact: "اتصل بنا",
+        footer_whatsapp: "واتساب: XXXXXXX",
+        footer_hours: "ساعات العمل: 9 صباحاً - 10 مساءً",
+        footer_promise: "وعدنا",
+        footer_copy: "© 2024 سيلينا هارفي | جميع القصص مشتركة بإذن | النتائج الفردية قد تختلف"
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'en';
+
+    function switchLang(lang) {
+      currentLang = lang;
+      localStorage.setItem('lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      updateContent();
+      updateLangButtons();
+    }
+
+    function updateContent() {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang] && translations[currentLang][key]) {
+          el.textContent = translations[currentLang][key];
+        }
+      });
+    }
+
+    function updateLangButtons() {
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === currentLang) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('open');
+    }
+
+    // Initialize
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    updateContent();
+    updateLangButtons();
+  </script>
+</body>
+</html>
