@@ -1,322 +1,689 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sarah Johnson - Real Success Stories</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سيلينا هارفي - قصص النجاح الحقيقية</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-  <!-- Trust Bar -->
+  <!-- TrustBar -->
   <div class="trust-bar">
     <div class="container">
-      <span data-i18n="trust_licensed">✓ Licensed Medical Professional</span>
-      <span data-i18n="trust_personalized">✓ Personalized Treatment</span>
-      <span data-i18n="trust_confidential">✓ 100% Confidential</span>
-      <span data-i18n="trust_support">✓ Full Support</span>
+      <span>&#10003; أخصائي طبي مرخص</span>
+      <span>&#10003; علاج مخصص</span>
+      <span>&#10003; 100% سرية</span>
+      <span>&#10003; دعم كامل</span>
     </div>
   </div>
 
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon">👩‍⚕️</span>
-        <span data-i18n="selena_name">Selena Harvey</span>
+      <a href="./index.html" class="logo">
+        <span class="logo-icon">&#128105;&#8205;&#9877;&#65039;</span>
+        <span>سيلينا هارفي</span>
       </a>
       <div class="nav-links">
-        <a href="index.html" class="active" data-i18n="nav_home">Success Stories</a>
-        <a href="about.html" data-i18n="nav_about">About Selena</a>
+        <a href="./index.html" class="active">قصص النجاح</a>
+        <a href="./about.html">عن سيلينا</a>
         <div class="lang-switcher">
-          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
-          <button class="lang-btn" onclick="switchLang('ar')">AR</button>
+          <a href="./en/index.html" class="lang-btn">EN</a>
+          <span class="lang-btn active">AR</span>
         </div>
       </div>
-      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
     </div>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="index.html" data-i18n="nav_home">Success Stories</a>
-    <a href="about.html" data-i18n="nav_about">About Selena</a>
+    <a href="./index.html">قصص النجاح</a>
+    <a href="./about.html">عن سيلينا</a>
     <div class="lang-switcher" style="padding: 0.75rem 0;">
-      <button class="lang-btn active" onclick="switchLang('en')">EN</button>
-      <button class="lang-btn" onclick="switchLang('ar')">AR</button>
+      <a href="./en/index.html" class="lang-btn">EN</a>
+      <span class="lang-btn active">AR</span>
     </div>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <div class="hero-badge">🏆 <span data-i18n="hero_badge">Over 10,000 Men Have Reclaimed Their Confidence</span></div>
-      <h1 data-i18n="hero_title">Real Stories. Real Results. Real Men.</h1>
+      <div class="hero-badge">&#127942; أكثر من 10,000 رجل استعاد ثقته بنفسه</div>
+      <h1>قصص حقيقية. نتائج حقيقية. رجال حقيقيون.</h1>
       <p>
-        <span data-i18n="hero_desc">Personalized treatment plans from a licensed professional</span><br>
-        <span data-i18n="hero_subdesc">These men opened up about their journey to getting their life back</span>
+        خطط علاج مخصصة من أخصائي مرخص<br>هؤلاء الرجال تحدثوا عن رحلتهم لاستعادة حياتهم
       </p>
       <div class="hero-stats">
         <div class="hero-stat">
-          <span class="hero-stat-number" data-i18n="hero_stat1_num">99%</span>
-          <span class="hero-stat-label" data-i18n="hero_stat1_label">Satisfaction Rate</span>
+          <span class="hero-stat-number">99%</span>
+          <span class="hero-stat-label">معدل الرضا</span>
         </div>
         <div class="hero-stat">
-          <span class="hero-stat-number" data-i18n="hero_stat2_num">10,000+</span>
-          <span class="hero-stat-label" data-i18n="hero_stat2_label">Success Stories</span>
+          <span class="hero-stat-number">+10,000</span>
+          <span class="hero-stat-label">قصة نجاح</span>
         </div>
         <div class="hero-stat">
-          <span class="hero-stat-number" data-i18n="hero_stat3_num">10 Yrs</span>
-          <span class="hero-stat-label" data-i18n="hero_stat3_label">Experience</span>
+          <span class="hero-stat-number">10 سنة</span>
+          <span class="hero-stat-label">خبرة</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Selena Intro -->
+  <!-- SelenaIntro -->
   <section class="selena-intro">
     <div class="container">
       <div class="selena-card">
         <div class="selena-image">
-          <img src="images/selena.jpg" alt="Selena Harvey">
+          <img src="./images/selena.jpg" alt="سيلينا هارفي" />
         </div>
         <div class="selena-info">
-          <h2>👩‍⚕️ <span data-i18n="selena_name">Selena Harvey</span></h2>
-          <p class="selena-title" data-i18n="selena_title">Licensed Medical Consultant | Men's Health Specialist</p>
-          <p class="selena-desc" data-i18n="selena_desc">For over a decade, I've been helping men overcome ED and reclaim their confidence. Every man's situation is unique, which is why I take time to understand your specific needs and create a personalized treatment plan that actually works.</p>
+          <h2>&#128105;&#8205;&#9877;&#65039; سيلينا هارفي</h2>
+          <p class="selena-title">استشارية طبية مرخصة | أخصائية صحة الرجال</p>
+          <p class="selena-desc">أكثر من عقد من الزمن أساعد فيه الرجال على التغلب على ضعف الانتصاب واستعادة ثقتهم بأنفسهم. كل رجل لديه ظروفه الخاصة، لذلك أخصص الوقت لفهم احتياجاتك المحددة ووضع خطة علاج مخصصة تعمل فعلاً.</p>
           <div class="selena-certs">
-            <span class="cert-badge" data-i18n="selena_cert1">✓ Master's in Medicine</span>
-            <span class="cert-badge" data-i18n="selena_cert2">✓ Board Certified</span>
-            <span class="cert-badge" data-i18n="selena_cert3">✓ 10+ Years Experience</span>
+            <span class="cert-badge">&#10003; ماجستير في الطب</span>
+            <span class="cert-badge">&#10003; معتمدة مجلس الإدارة</span>
+            <span class="cert-badge">&#10003; +10 سنوات خبرة</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
+  <!-- Stats -->
   <section class="stats">
     <div class="container">
       <div class="stat-item">
         <span class="stat-number">10000+</span>
-        <span class="stat-label" data-i18n="stat_reviews">Verified Stories</span>
+        <span class="stat-label">قصص موثقة</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">10000+</span>
-        <span class="stat-label" data-i18n="stat_clients">Men Helped</span>
+        <span class="stat-label">رجل تمت مساعدته</span>
       </div>
       <div class="stat-item">
         <span class="stat-number">99%</span>
-        <span class="stat-label" data-i18n="stat_rate">Success Rate</span>
+        <span class="stat-label">معدل النجاح</span>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
+  <!-- PricingSection -->
   <section class="pricing-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge" data-i18n="cod_badge">Payment on Delivery</span>
-        <h2 data-i18n="cod_title">Cash on Delivery</h2>
-        <p data-i18n="cod_desc">No upfront payment. Pay only when you receive your order at your door.</p>
+        <span class="section-badge">الدفع عند الاستلام</span>
+        <h2>الدفع عند الاستلام</h2>
+        <p>لا يوجد دفع مسبق. ادفع فقط عند استلام طلبك على باب منزلك.</p>
       </div>
       <div class="pricing-cards">
-        <div class="pricing-card">
-          <div style="font-size:4rem;margin-bottom:1rem;">🚚</div>
-          <h3 class="pricing-title" data-i18n="cod_title">Cash on Delivery</h3>
-          <div class="pricing-subtitle" data-i18n="cod_subtitle">100% Risk-Free Ordering</div>
-          <div class="pricing-badges">
-            <div class="pricing-badge">🔒 <span data-i18n="cod_badge1">Confidential Shipping</span></div>
-            <div class="pricing-badge">🏠 <span data-i18n="cod_badge2">Home Delivery</span></div>
-            <div class="pricing-badge">💵 <span data-i18n="cod_badge3">Cash on Delivery</span></div>
+        <div class="pricing-card" style="grid-column:1/-1;max-width:600px;margin:0 auto;">
+          <div style="font-size:4rem;margin-bottom:1rem;">&#128666;</div>
+          <h3 class="pricing-title">الدفع عند الاستلام</h3>
+          <div class="pricing-subtitle">طلب 100% بلا مخاطر</div>
+          <div style="display:flex;justify-content:center;gap:0.75rem;flex-wrap:wrap;margin:1.5rem 0;">
+            <div style="background:rgba(79,70,229,0.1);color:var(--primary-color);padding:0.6rem 1.25rem;border-radius:2rem;font-weight:600;font-size:0.9rem;display:flex;align-items:center;gap:0.4rem;">
+              &#128274; شحن سري
+            </div>
+            <div style="background:rgba(79,70,229,0.1);color:var(--primary-color);padding:0.6rem 1.25rem;border-radius:2rem;font-weight:600;font-size:0.9rem;display:flex;align-items:center;gap:0.4rem;">
+              &#127968; توصيل للمنزل
+            </div>
+            <div style="background:rgba(79,70,229,0.1);color:var(--primary-color);padding:0.6rem 1.25rem;border-radius:2rem;font-weight:600;font-size:0.9rem;display:flex;align-items:center;gap:0.4rem;">
+              &#128181; الدفع عند الاستلام
+            </div>
           </div>
-          <ul class="pricing-features">
-            <li><span class="check">✓</span> <span data-i18n="cod_feat1">No advance payment required</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat2">Discreet plain packaging</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat3">Fast delivery to your door</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat4">Pay only upon receipt</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat5">24/7 WhatsApp support</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat6">Full confidentiality guaranteed</span></li>
-            <li><span class="check">✓</span> <span data-i18n="cod_feat7">90-day unconditional refund guarantee</span></li>
+          <ul class="pricing-features" style="text-align:center;">
+            <li style="justify-content:center;"><span class="check">&#10003;</span> لا يُشترط دفع مسبق</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> عبوة عادية سرية تماماً</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> توصيل سريع إلى باب منزلك</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> ادفع فقط عند الاستلام</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> دعم واتساب 24/7</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> سرية تامة مضمونة</li>
+            <li style="justify-content:center;"><span class="check">&#10003;</span> ضمان استرداد كامل خلال 90 يوماً بدون شروط</li>
           </ul>
-          <button class="pricing-btn pricing-btn-primary" onclick="showModal()" data-i18n="cod_btn">Order Now via WhatsApp</button>
+          <button onclick="showModal('modal-pricing')" class="pricing-btn pricing-btn-primary">اطلب الآن عبر الواتساب</button>
         </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="modal-pricing" class="modal-overlay" onclick="hideModal('modal-pricing')">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <p class="modal-text">Contact Selena at: XXXXXXX</p>
+        <button onclick="hideModal('modal-pricing')" class="modal-btn">موافق</button>
       </div>
     </div>
   </section>
 
-  <!-- Featured Reviews -->
+  <!-- FeaturedReviews -->
   <section class="featured-reviews">
     <div class="container">
       <div class="section-header">
-        <h2>💎 <span data-i18n="reviews_title">Real Men Share Their Journey</span></h2>
-        <p data-i18n="reviews_desc">These are authentic stories from men who worked with me to overcome their challenges</p>
+        <h2>&#128142; رجال حقيقيون يشاركون رحلتهم</h2>
+        <p>هذه قصص حقيقية من رجال عملوا معي للتغلب على تحدياتهم</p>
       </div>
       <div class="reviews-grid">
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/32.jpg" alt="Omar Al-Farsi">
+              <img src="./images/32.jpg" alt="عمر الفارسي" />
               <div>
-                <div class="reviewer-name">Omar Al-Farsi <span>48 • Riyadh, Saudi Arabia</span></div>
+                <div class="reviewer-name">عمر الفارسي <span>48 &#8226; الرياض، المملكة العربية السعودية</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"For three years I suffered in silence. I was too ashamed to visit a local doctor—everyone knows everyone in my community. When I found Selena online, I finally had the courage to seek help. She treated me with complete respect and privacy. The delivery was discreet, no one knew what was in the package. Alhamdulillah, my marriage has been transformed. My wife is happy, and I feel like a complete man again."</div>
-          <span class="effect-tag">Complete Recovery</span>
+          <div class="review-content">"عانيت لمدة ثلاث سنوات في صمت. كنت أشعر بالخجل الشديد من زيارة طبيب محلي - في مجتمعنا الجميع يعرف الجميع. عندما وجدت سيلينا عبر الإنترنت، أخيراً وجدت الشجاعة لطلب المساعدة. عاملتني بكل احترام وسرية. التوصيل كان بعبوة عادية، لا أحد يعرف ما بداخلها. الحمد لله، تحول زواجي رأساً على عقب. زوجتي سعيدة وأشعر أنني رجل كامل مرة أخرى."</div>
+          <span class="effect-tag">شفاء تام</span>
           <div class="review-meta">
-            <span>📅 03/15/2025</span>
-            <span>⏱️ 3 months</span>
+            <span>&#128197; 15/03/2025</span>
+            <span>&#9201; 3 أشهر</span>
           </div>
         </div>
+
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/33.jpg" alt="Mohammed Al-Rashid">
+              <img src="./images/33.jpg" alt="محمد الراشد" />
               <div>
-                <div class="reviewer-name">Mohammed Al-Rashid <span>52 • Dubai, UAE</span></div>
+                <div class="reviewer-name">محمد الراشد <span>52 &#8226; دبي، الإمارات</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"My marriage was falling apart. I couldn't fulfill my duties as a husband, and the shame was destroying me. Selena understood the cultural sensitivity immediately. She explained everything clearly, and the cash-on-delivery option gave me peace of mind. The results were beyond my expectations. My wife and I are closer than we've been in twenty years. May God bless her work."</div>
-          <span class="effect-tag">Major Improvement</span>
+          <div class="review-content">"زواجي كان على وشك الانهيار. لم أستطع أداء واجبي كزوج، والخجل كان يدمرني. سيلينا فهمت الحساسية الثقافية على الفور. شرحت لي كل شيء بوضوح، وخيار الدفع عند الاستلام منحني راحة البال. النتائج كانت فوق توقعاتي. أنا وزوجتي أصبحنا أقرب مما كنا عليه منذ عشرين عاماً. الله يبارك في عملها."</div>
+          <span class="effect-tag">تحسن كبير</span>
           <div class="review-meta">
-            <span>📅 03/22/2025</span>
-            <span>⏱️ 2 months</span>
+            <span>&#128197; 22/03/2025</span>
+            <span>&#9201; شهران</span>
           </div>
         </div>
+
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/34.jpg" alt="Khalid Al-Maktoum">
+              <img src="./images/34.jpg" alt="خالد المكتوم" />
               <div>
-                <div class="reviewer-name">Khalid Al-Maktoum <span>45 • Muscat, Oman</span></div>
+                <div class="reviewer-name">خالد المكتوم <span>45 &#8226; مسقط، عمان</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"In our culture, a man's dignity is everything. When I started having problems, I isolated myself from my wife. I thought she would think less of me. Selena gave me hope without judgment. The treatment arrived in plain packaging, and I paid only upon delivery. Now my wife smiles again, and I've regained my confidence as head of the household."</div>
-          <span class="effect-tag">Complete Recovery</span>
+          <div class="review-content">"في ثقافتنا، كرامة الرجل هي كل شيء. عندما بدأت أواجه مشاكل، انعزلت عن زوجتي. ظننت أنها ستقلل من شأني. سيلينا منحتني الأمل بدون أحكام. العلاج وصل بعبوة عادية، ودفعت فقط عند استلامه. الآن زوجتي تبتسم مرة أخرى، واستعدت ثقتي كرب الأسرة."</div>
+          <span class="effect-tag">شفاء تام</span>
           <div class="review-meta">
-            <span>📅 04/08/2025</span>
-            <span>⏱️ 4 months</span>
+            <span>&#128197; 08/04/2025</span>
+            <span>&#9201; 4 أشهر</span>
           </div>
         </div>
+
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/35.jpg" alt="Ahmed Hassan">
+              <img src="./images/35.jpg" alt="أحمد حسن" />
               <div>
-                <div class="reviewer-name">Ahmed Hassan <span>50 • Doha, Qatar</span></div>
+                <div class="reviewer-name">أحمد حسن <span>50 &#8226; الدوحة، قطر</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"I was worried about the cost and about being scammed online. But Selena's cash-on-delivery service removed all risk. I paid nothing until the product was in my hands. She recommended exactly what I needed—not the most expensive option, but the right one. Two months later, I am a new man. My wife tells her sisters how happy she is. This changed my entire family life."</div>
-          <span class="effect-tag">Significant Improvement</span>
+          <div class="review-content">"كنت قلقاً من التكلفة ومن الوقوع في عملية احتيال عبر الإنترنت. لكن خدمة الدفع عند الاستلام من سيلينا أزالت كل المخاطر. لم أدفع شيئاً حتى كان المنتج بين يدي. أوصتني بالعلاج المناسب لي - ليس الأغلى، بل الأنسب. بعد شهرين، أصبحت رجلاً جديداً. زوجتي تخبر أخواتها بسعادتها. هذا غير حياتي العائلية بالكامل."</div>
+          <span class="effect-tag">تحسن ملحوظ</span>
           <div class="review-meta">
-            <span>📅 04/17/2025</span>
-            <span>⏱️ 2 months</span>
+            <span>&#128197; 17/04/2025</span>
+            <span>&#9201; شهران</span>
           </div>
         </div>
+
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/36.jpg" alt="Yusuf Ibrahim">
+              <img src="./images/36.jpg" alt="يوسف إبراهيم" />
               <div>
-                <div class="reviewer-name">Yusuf Ibrahim <span>38 • Kuwait City, Kuwait</span></div>
+                <div class="reviewer-name">يوسف إبراهيم <span>38 &#8226; مدينة الكويت، الكويت</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"I had two problems that no man wants to admit: I couldn't perform, and I couldn't last. I was terrified my wife would ask for a divorce. Selena handled my case with the utmost discretion. The medicine arrived quickly, payment was only on delivery, and the results were immediate. I went from failure to strength. My wife noticed the difference on the first night. Selena saved my marriage and my honor."</div>
-          <span class="effect-tag">Complete Recovery</span>
+          <div class="review-content">"كان لدي مشكلتان لا يجرؤ أي رجل على الاعتراف بهما: لم أستطع الأداء ولم أستطع التحمل. كنت مرعوباً أن تطلب زوجتي الطلاق. تعاملت سيلينا مع حالتي بأقصى درجات السرية. الدواء وصل بسرعة، الدفع كان عند الاستلام، والنتائج كانت فورية. انتقلت من الفشل إلى القوة. زوجتي لاحظت الفرق من الليلة الأولى. سيلينا أنقذت زواجي وكرامتي."</div>
+          <span class="effect-tag">شفاء تام</span>
           <div class="review-meta">
-            <span>📅 05/03/2025</span>
-            <span>⏱️ 2 months</span>
+            <span>&#128197; 03/05/2025</span>
+            <span>&#9201; شهران</span>
           </div>
         </div>
+
         <div class="review-card featured">
           <div class="review-header">
             <div class="reviewer-info">
-              <img src="images/37.jpg" alt="Abdullah Al-Otaibi">
+              <img src="./images/37.jpg" alt="عبدالله العتيبي" />
               <div>
-                <div class="reviewer-name">Abdullah Al-Otaibi <span>42 • Amman, Jordan</span></div>
+                <div class="reviewer-name">عبدالله العتيبي <span>42 &#8226; عمّان، الأردن</span></div>
                 <div class="review-rating">
-                  <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="review-content">"After prostate surgery, I thought my intimate life was over forever. My doctor suggested Selena, and I am forever grateful. She understood the medical complexity and worked with my condition. The cash-on-delivery meant I could verify everything before paying. Six months later, I have surprised even myself. My wife is amazed by my recovery. Selena gave me back what I thought was lost forever."</div>
-          <span class="effect-tag">Medical Recovery</span>
+          <div class="review-content">"أوصاني صديق بسيلينا بعد أن أسرّ لي عن معاناته. في البداية كنت متشككاً في طلب شيء شخصي عبر الإنترنت. لكن خيار الدفع عند الاستلام جعلني أشعر بالأمان. طرحت سيلينا عليّ أسئلة مفصلة عن صحتي ونمط حياتي، ثم وضعت خطة مخصصة. ما فاجأني أكثر هو المتابعة اللاحقة - إنها تتذكر اهتماماتي حقاً. أنا وزوجتي محظوظان لأننا وجدناها."</div>
+          <span class="effect-tag">نتائج كبيرة</span>
           <div class="review-meta">
-            <span>📅 05/12/2025</span>
-            <span>⏱️ 6 months</span>
+            <span>&#128197; 19/05/2025</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/38.jpg" alt="طارق الناصر" />
+              <div>
+                <div class="reviewer-name">طارق الناصر <span>60 &#8226; جدة، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"بعد وفاة زوجتي الأولى، ظننت أنني لن أتزوج مرة أخرى. عندما قابلت امرأة صالحة أخيراً، كنت مرعوباً من خيبة أملها. كدتُ ألغي الخطوبة. عاملتني سيلينا بكرامة، راجعت تاريخي الصحي بعناية، وأعطتني الثقة التي احتجتها. ليلة زفافنا كانت مثالية. نبني حياة جديدة معاً. منحتني فرصة ثانية في السعادة."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 02/06/2025</span>
+            <span>&#9201; 4 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/39.jpg" alt="سامي القحطاني" />
+              <div>
+                <div class="reviewer-name">سامي القحطاني <span>55 &#8226; المنامة، البحرين</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"باعتباري مصاباً بالسكري، قيل لي إن هذا شيء يجب أن أتقبله. زوجتي كانت قد فقدت الأمل. سيلينا كانت مختلفة - راجعت حالتي بشمولية، وحتى نسقت مع طبيب قلبي. أرسلت الدواء بدفع عند الاستلام دون أي دفع مسبق. الآن استعدت قوتي، وزوجتي شاكرة. سيلينا تفهم حقاً أن صحة الرجل تؤثر على الأسرة بأكملها."</div>
+          <span class="effect-tag">تحسن ملحوظ</span>
+          <div class="review-meta">
+            <span>&#128197; 14/06/2025</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/40.jpg" alt="فهد المطيري" />
+              <div>
+                <div class="reviewer-name">فهد المطيري <span>47 &#8226; أبوظبي، الإمارات</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"عشرون عاماً من الزواج، واختفت الحميمية تماماً. ضغط الفشل أمام زوجتي كان يسحق روحي. سيلينا لم تحاول بيعي منتجات باهظة. أوصت بشيء ميسور ومناسب. خلال أسابيع، أصبحنا كالعرسان مرة أخرى. حتى أنها نصحتني بالنظام الغذائي والتمارين. إنها تعالج الرجل ككل، ليس فقط الجسد."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 28/06/2025</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/41.jpg" alt="ناصر الدوسري" />
+              <div>
+                <div class="reviewer-name">ناصر الدوسري <span>35 &#8226; الخبر، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"التوتر الوظيفي دمر كل شيء. في 35، لم يتبقَ لدي أي طاقة لزوجتي. كنت أعرف أنها صبورة، لكنني أيضاً أعرف أنها تستحق الأفضل. وضعت سيلينا خطة عافية شاملة، وليست مجرد حبوب. تتابعني للتأكد من أنني أدير التوتر. التغيير كان لا يصدق - في زواجي وعملي. أوصي بها لكل أخ يعاني في صمت."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 11/07/2025</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/44.jpg" alt="راشد العمري" />
+              <div>
+                <div class="reviewer-name">راشد العمري <span>44 &#8226; المدينة المنورة، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"كانت زوجتي تفقد صبرها. كنت أختلق أعذاراً بالتعب، لكن الحقيقة كانت أنني لا أستطيع الأداء. طمأنتني سيلينا بأن هذا قابل للعلاج وأعطتني خطة محددة. بعد بدء العلاج، تغير كل شيء. كانت زوجتي مصدومة - بشكل إيجابي. زواجنا أقوى من أي وقت مضى. سيلينا أنقذت أسرتنا حرفياً."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 18/08/2025</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/45.jpg" alt="حسن الشمري" />
+              <div>
+                <div class="reviewer-name">حسن الشمري <span>67 &#8226; الطائف، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"ظننت أن حياتي كزوج انتهت في هذا العمر. شجعني ابني على التواصل مع سيلينا، كان قلقاً من أن أعيش وحيداً. شرحت لي أن العمر ليس الحاجز الذي ظننته. كانت محترمة ولم تجعلني أشعر بالعجز. الآن لدي القوة لأكون الزوج الذي كنتُه دائماً. يشعرني بالروعة استعادة هذا الجزء من حياتي."</div>
+          <span class="effect-tag">تحسن ملحوظ</span>
+          <div class="review-meta">
+            <span>&#128197; 01/09/2025</span>
+            <span>&#9201; 4 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/47.jpg" alt="ماجد السالم" />
+              <div>
+                <div class="reviewer-name">ماجد السالم <span>31 &#8226; مدينة الكويت، الكويت</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"متزوج حديثاً وواجهت بالفعل مشاكل في غرفة النوم. الضغط كان لا يُحتمل - زوجة جديدة، توقعات العائلة، وقلقي الشخصي. استجابت سيلينا بسرعة وفهمت مدى إلحاحية وضعي. المرة الأولى بعد بدء العلاج كانت كالشهر العسل. بعد ستة أشهر، ما زلنا مستمرين بقوة. منحت زواجنا الأساس الذي يستحقه."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 27/09/2025</span>
+            <span>&#9201; 6 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/49.jpg" alt="إبراهيم الغامدي" />
+              <div>
+                <div class="reviewer-name">إبراهيم الغامدي <span>53 &#8226; جيزان، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"في زواجي الثاني، كنت مرعوباً من تكرار أخطاء زواجي الأول. أجرت سيلينا استشارة كاملة وأوصت بالضبط بما أحتاجه. زوجتي الجديدة لا تعلم أنني كنت أعاني - تظن أن هذا هو طبيعي. سرية سيلينا وفعاليتها منحتني بداية جديدة. أخيراً أصبحت الزوج الذي طالما أردت أن أكونه."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 22/10/2025</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/50.jpg" alt="تركي الحميد" />
+              <div>
+                <div class="reviewer-name">تركي الحميد <span>41 &#8226; القاهرة، مصر</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"جربت حبوباً ومكملات وحتى علاجات مشبوهة من الإنترنت. لم يعمل شيء. كنت على استعداد للاستسلام. سيلينا كانت أملي الأخير. شرحت لي لماذا فشل كل شيء آخر وكيف يختلف نهجها. كانت على حق. لأول مرة منذ سنوات، أعمل كما يجب أن يعمل الرجل. أقول لكل أخ أعرفه يعاني - اتصل بسيلينا. خيار الدفع عند الاستلام يجربها بلا مخاطر."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 04/11/2025</span>
+            <span>&#9201; 4 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/51.jpg" alt="فيصل النوفل" />
+              <div>
+                <div class="reviewer-name">فيصل النوفل <span>56 &#8226; دبي، الإمارات</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"تركتني جراحة البروستاتا محطماً. قال لي أخصائي المسالك إنه قد يتحسن، لكنه لم يتحسن. شعرت أنني نصف رجل وكنت أشعر بالخجل أمام زوجتي. تواصلت سيلينا مع جراحي لفهم وضعي بالضبط، ثم وضعت خطة حذرة وتدريجية. بدأنا بجرعة منخفضة وبطيئة. الآن، بعد عامين من الجراحة، أنا وزوجتي حميمان مرة أخرى. سيلينا لم تستسلم لي حين كنت مستعداً للاستسلام لنفسي."</div>
+          <span class="effect-tag">تحسن ملحوظ</span>
+          <div class="review-meta">
+            <span>&#128197; 17/11/2025</span>
+            <span>&#9201; 5 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/52.jpg" alt="زايد المزروعي" />
+              <div>
+                <div class="reviewer-name">زايد المزروعي <span>39 &#8226; أبوظبي، الإمارات</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"متزوج حديثاً في 39 عاماً، وكنت تحت ضغط هائل للأداء. ليلة الزفاف نفسها كانت كارثة، والخجل لاحقني كل يوم. ما أقنعني بتجربة سيلينا هو ضمان استرداد المال خلال 90 يوماً - إذا لم ينجح العلاج، لم أخسر شيئاً. خلال ثلاثة أسابيع، تغير كل شيء. زوجتي تراني أخيراً كالرجل الذي تزوجته. هذا الضمان منحني الشجاعة لاتخاذ الخطوة الأولى."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 01/12/2025</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/54.jpg" alt="هشام الفايد" />
+              <div>
+                <div class="reviewer-name">هشام الفايد <span>36 &#8226; الإسكندرية، مصر</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"كنت متشككاً في كل شيء على الإنترنت. عمليات احتيال كثيرة، ووعود زائفة. لكن سياسة استرداد المال خلال 90 يوماً بدون شروط جعلتني أشعر بالأمان - إذا كانت مستعدة لتقديم هذا الضمان، فهي تؤمن بعلاجها بالفعل. لم أدفع شيئاً حتى وصلت العبوة. في الأسبوع الأول لاحظت فرقاً. بحلول الشهر الثاني، كانت صديقتي تسأل ماذا حدث للرجل الخجول الذي كانت تعرفه. سيلينا تقدم بالفعل ما تعد به."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 28/12/2025</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/55.jpg" alt="وليد التميمي" />
+              <div>
+                <div class="reviewer-name">وليد التميمي <span>62 &#8226; الرياض، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"في عمري هذا، صدقت حقاً أن هذا الجانب من الحياة قد انتهى. أولادي كبروا، لكن زوجتي لا تزال صغيرة وتستحق زوجاً صالحاً. كنت أشعر بالخجل حتى من مناقشة الموضوع. عاملتني سيلينا بكرامة الكبير. شرحت لي أن العمر مجرد رقم عندما يكون العلاج الصحيح. الدفع عند الاستلام وضمان الاسترداد يعني أنني لم أخسر شيئاً. الآن زوجتي تخبر صديقاتها أنني 'شاب مرة أخرى'. الله يبارك في هذه المرأة."</div>
+          <span class="effect-tag">تحسن ملحوظ</span>
+          <div class="review-meta">
+            <span>&#128197; 10/01/2026</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/57.jpg" alt="بسام الخالدي" />
+              <div>
+                <div class="reviewer-name">بسام الخالدي <span>41 &#8226; عمّان، الأردن</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"أوصاني صديق موثوق من الجامعة بسيلينا بعد أن حصل على نتائج غيرت حياته. مع ذلك، ترددت. ما دفعني في النهاية هو ضمان الاسترداد غير المشروط لمدة 90 يوماً. لا طباعة صغيرة، لا حيل - مجرد وعد صريح. كانت الاستشارة محترفة، التوصيل سري، والنتائج تتحدث عن نفسها. لاحظت زوجتي الفرق قبل أن أخبرها حتى أنني أتناول شيئاً. هذا النوع من التحسن الطبيعي والحقيقي لا يقدر بثمن."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 05/02/2026</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/58.jpg" alt="داود الشحي" />
+              <div>
+                <div class="reviewer-name">داود الشحي <span>50 &#8226; دبي، الإمارات</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"بعد طلاقي، تزوجت امرأة رائعة أصغر مني بـ 15 عاماً. الخوف من خيبة أملها كان يدمر ثقتي قبل أن نبدأ حتى. بحثت لأشهر وبرزت سيلينا بسبب خلفيتها الطبية وسياسة الاسترداد. لست رجلاً يتحمل المخاطر بصحته أو ماله. وصل التوصيل بالدفع عند الاستلام بعبوة عادية. بعد ثلاثة أشهر، زوجتي الجديدة راضية تماماً وأشعر كالملك في بيتي. الضمان جعل ذلك ممكناً."</div>
+          <span class="effect-tag">تحسن كبير</span>
+          <div class="review-meta">
+            <span>&#128197; 18/02/2026</span>
+            <span>&#9201; 3 أشهر</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/59.jpg" alt="سعيد المنصوري" />
+              <div>
+                <div class="reviewer-name">سعيد المنصوري <span>33 &#8226; الدوحة، قطر</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"في 33 عاماً، لا تتوقع أبداً أن تواجه هذه المشكلة. كنت مدمراً عندما هددتني صديقتي بالرحيل. توتر العمل، السهر، والعادات السيئة دمرتني. ضمان 90 يوماً من سيلينا منحني فرصة أخيرة لإصلاح الأمور دون خسارة المال. لم ترسل مجرد حبوب - أعطتني خطة نمط حياة كاملة. تركت التدخين، بدأت أنام بشكل أفضل، واتبعت علاجها. بعد ستة أسابيع، تقدمت صديقتي لي بالزواج. سيلينا لم تنقذ جسدي فحسب؛ أنقذت مستقبلي."</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 02/03/2026</span>
+            <span>&#9201; شهران</span>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-header">
+            <div class="reviewer-info">
+              <img src="./images/61.jpg" alt="حمد المري" />
+              <div>
+                <div class="reviewer-name">حمد المري <span>46 &#8226; الدمام، المملكة العربية السعودية</span></div>
+                <div class="review-rating">
+                  <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-content">"ك قبطان بحر، أكون بعيداً عن المنزل لأشهر في المرة. عندما أعود، ضغط الأداء يكون مكثفاً بعد هذه الانفصالات الطويلة. خذلت زوجتي مرات كثيرة وكانت تفقد صبرها. أوصت سيلينا بعلاج يعمل مع جدولي غير المنتظم وتشحنه سراً إلى أي ميناء. خيار الدفع عند الاستلام وضمان 90 يوماً يعني أنني استطعت تجربته في رحلتي القادمة دون أي مخاطر. نجح بشكل مذهل حتى أن زوجتي قابلتني في الرصيف بدموع الفرح. قالت: 'زوجي عاد.'"</div>
+          <span class="effect-tag">شفاء تام</span>
+          <div class="review-meta">
+            <span>&#128197; 28/03/2026</span>
+            <span>&#9201; 3 أشهر</span>
           </div>
         </div>
       </div>
+
       <div class="text-center" style="margin-top:3rem">
-        <button class="btn-primary btn-large" onclick="showModal()" data-i18n="btn_start">Start Your Journey Today →</button>
+        <button onclick="showModal('modal-reviews')" class="btn-primary btn-large">ابدأ رحلتك اليوم &#8592;</button>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="modal-reviews" class="modal-overlay" onclick="hideModal('modal-reviews')">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <p class="modal-text">Contact Selena at: XXXXXXX</p>
+        <button onclick="hideModal('modal-reviews')" class="modal-btn">موافق</button>
       </div>
     </div>
   </section>
 
-  <!-- Team Section -->
+  <!-- TeamSection -->
   <section class="team-section">
     <div class="container">
-      <h2>👥 <span data-i18n="team_title">Our Professional Team</span></h2>
-      <p class="section-desc" data-i18n="team_desc">A dedicated team of medical professionals committed to helping you succeed</p>
+      <h2>&#128101; فريقنا الطبي المحترف</h2>
+      <p class="section-desc">فريق طبي متخصص ملتزم بمساعدتك على النجاح</p>
       <div class="team-gallery">
         <div class="team-image">
-          <img src="images/team.jpg" alt="Our Professional Team">
+          <img src="./images/team.jpg" alt="فريقنا الطبي المحترف" />
         </div>
         <div class="team-image">
-          <img src="images/team2.jpg" alt="Our Team">
+          <img src="./images/team2.jpg" alt="فريقنا" />
         </div>
         <div class="team-image">
-          <img src="images/team3.jpg" alt="Our Team">
+          <img src="./images/team3.jpg" alt="فريقنا" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Process Section -->
+  <!-- ProcessSection -->
   <section class="process">
     <div class="container">
-      <h2>🛒 <span data-i18n="process_title">Your Journey to Confidence</span></h2>
+      <h2>&#128722; رحلتك نحو الثقة</h2>
       <div class="process-steps">
         <div class="process-step">
           <div class="step-number">1</div>
-          <h3 data-i18n="step1_title">Private Consultation</h3>
-          <p data-i18n="step1_desc">Reach out confidentially and share your concerns. No judgment, just understanding.</p>
+          <h3>استشارة خاصة</h3>
+          <p>تواصل معي بسرية تامة وشارك مخاوفك. لا أحكام، فقط تفهم.</p>
         </div>
         <div class="process-step">
           <div class="step-number">2</div>
-          <h3 data-i18n="step2_title">Personalized Plan</h3>
-          <p data-i18n="step2_desc">I create a customized treatment plan based on your unique situation and health.</p>
+          <h3>خطة مخصصة</h3>
+          <p>أضع لك خطة علاج مخصصة بناءً على وضعك الصحي الفريد.</p>
         </div>
         <div class="process-step">
           <div class="step-number">3</div>
-          <h3 data-i18n="step3_title">Ongoing Support</h3>
-          <p data-i18n="step3_desc">Regular check-ins to adjust your treatment and ensure you're seeing results.</p>
+          <h3>متابعة مستمرة</h3>
+          <p>فحوصات دورية لتعديل علاجك والتأكد من تحقيق النتائج.</p>
         </div>
         <div class="process-step">
           <div class="step-number">4</div>
-          <h3 data-i18n="step4_title">Reclaim Your Life</h3>
-          <p data-i18n="step4_desc">Get back to being the confident man you are meant to be.</p>
+          <h3>استعادة حياتك</h3>
+          <p>عُد لأن تكون الرجل الواثق الذي من المفترض أن تكونه.</p>
         </div>
       </div>
     </div>
@@ -327,219 +694,43 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 data-i18n="selena_name">Selena Harvey</h3>
+          <h3>سيلينا هارفي</h3>
           <p>
-            <span data-i18n="footer_tagline">Helping men reclaim their confidence and vitality</span><br>
-            <span data-i18n="footer_stories">Over 5,000 success stories and counting</span>
+            مساعدة الرجال على استعادة ثقتهم وحيويتهم<br>أكثر من 5,000 قصة نجاح وعدد متزايد
           </p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer_contact">Contact</h4>
-          <p>📱 <span data-i18n="footer_whatsapp">WhatsApp: XXXXXXX</span></p>
-          <p>⏰ <span data-i18n="footer_hours">Hours: 9AM - 10PM EST</span></p>
+          <h4>اتصل بنا</h4>
+          <p>&#128241; واتساب: XXXXXXX</p>
+          <p>&#9201; ساعات العمل: 9 صباحاً - 10 مساءً</p>
         </div>
         <div class="footer-section">
-          <h4 data-i18n="footer_promise">Our Promise</h4>
+          <h4>وعدنا</h4>
           <p>
-            ✓ <span data-i18n="trust_licensed">Licensed Medical Professional</span><br>
-            ✓ <span data-i18n="trust_confidential">100% Confidential</span><br>
-            ✓ <span data-i18n="trust_personalized">Personalized Treatment</span>
+            &#10003; أخصائي طبي مرخص<br>
+            &#10003; 100% سرية<br>
+            &#10003; علاج مخصص
           </p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p data-i18n="footer_copy">© 2024 Selena Harvey | All stories shared with permission | Individual results may vary</p>
+        <p>&#169; 2024 سيلينا هارفي | جميع القصص مشتركة بإذن | النتائج الفردية قد تختلف</p>
       </div>
     </div>
   </footer>
 
-  <!-- Modal -->
-  <div class="modal-overlay" id="contactModal" onclick="hideModal()">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <p class="modal-text">Contact Selena at: XXXXXXX</p>
-      <button class="modal-btn" onclick="hideModal()">OK</button>
-    </div>
-  </div>
-
   <script>
-    // Translations
-    const translations = {
-      en: {
-        trust_licensed: "Licensed Medical Professional",
-        trust_personalized: "Personalized Treatment",
-        trust_confidential: "100% Confidential",
-        trust_support: "Full Support",
-        selena_name: "Selena Harvey",
-        nav_home: "Success Stories",
-        nav_about: "About Selena",
-        hero_badge: "Over 10,000 Men Have Reclaimed Their Confidence",
-        hero_title: "Real Stories. Real Results. Real Men.",
-        hero_desc: "Personalized treatment plans from a licensed professional",
-        hero_subdesc: "These men opened up about their journey to getting their life back",
-        hero_stat1_num: "99%",
-        hero_stat1_label: "Satisfaction Rate",
-        hero_stat2_num: "10,000+",
-        hero_stat2_label: "Success Stories",
-        hero_stat3_num: "10 Yrs",
-        hero_stat3_label: "Experience",
-        selena_title: "Licensed Medical Consultant | Men's Health Specialist",
-        selena_desc: "For over a decade, I've been helping men overcome ED and reclaim their confidence. Every man's situation is unique, which is why I take time to understand your specific needs and create a personalized treatment plan that actually works.",
-        selena_cert1: "✓ Master's in Medicine",
-        selena_cert2: "✓ Board Certified",
-        selena_cert3: "✓ 10+ Years Experience",
-        stat_reviews: "Verified Stories",
-        stat_clients: "Men Helped",
-        stat_rate: "Success Rate",
-        cod_badge: "Payment on Delivery",
-        cod_title: "Cash on Delivery",
-        cod_desc: "No upfront payment. Pay only when you receive your order at your door.",
-        cod_subtitle: "100% Risk-Free Ordering",
-        cod_badge1: "Confidential Shipping",
-        cod_badge2: "Home Delivery",
-        cod_badge3: "Cash on Delivery",
-        cod_feat1: "No advance payment required",
-        cod_feat2: "Discreet plain packaging",
-        cod_feat3: "Fast delivery to your door",
-        cod_feat4: "Pay only upon receipt",
-        cod_feat5: "24/7 WhatsApp support",
-        cod_feat6: "Full confidentiality guaranteed",
-        cod_feat7: "90-day unconditional refund guarantee",
-        cod_btn: "Order Now via WhatsApp",
-        reviews_title: "Real Men Share Their Journey",
-        reviews_desc: "These are authentic stories from men who worked with me to overcome their challenges",
-        btn_start: "Start Your Journey Today →",
-        team_title: "Our Professional Team",
-        team_desc: "A dedicated team of medical professionals committed to helping you succeed",
-        process_title: "Your Journey to Confidence",
-        step1_title: "Private Consultation",
-        step1_desc: "Reach out confidentially and share your concerns. No judgment, just understanding.",
-        step2_title: "Personalized Plan",
-        step2_desc: "I create a customized treatment plan based on your unique situation and health.",
-        step3_title: "Ongoing Support",
-        step3_desc: "Regular check-ins to adjust your treatment and ensure you're seeing results.",
-        step4_title: "Reclaim Your Life",
-        step4_desc: "Get back to being the confident man you are meant to be.",
-        footer_tagline: "Helping men reclaim their confidence and vitality",
-        footer_stories: "Over 5,000 success stories and counting",
-        footer_contact: "Contact",
-        footer_whatsapp: "WhatsApp: XXXXXXX",
-        footer_hours: "Hours: 9AM - 10PM EST",
-        footer_promise: "Our Promise",
-        footer_copy: "© 2024 Selena Harvey | All stories shared with permission | Individual results may vary"
-      },
-      ar: {
-        trust_licensed: "أخصائي طبي مرخص",
-        trust_personalized: "علاج مخصص",
-        trust_confidential: "100% سرية",
-        trust_support: "دعم كامل",
-        selena_name: "سيلينا هارفي",
-        nav_home: "قصص النجاح",
-        nav_about: "عن سيلينا",
-        hero_badge: "أكثر من 10,000 رجل استعاد ثقته بنفسه",
-        hero_title: "قصص حقيقية. نتائج حقيقية. رجال حقيقيون.",
-        hero_desc: "خطط علاج مخصصة من أخصائي مرخص",
-        hero_subdesc: "هؤلاء الرجال تحدثوا عن رحلتهم لاستعادة حياتهم",
-        hero_stat1_num: "99%",
-        hero_stat1_label: "معدل الرضا",
-        hero_stat2_num: "+10,000",
-        hero_stat2_label: "قصة نجاح",
-        hero_stat3_num: "10 سنة",
-        hero_stat3_label: "خبرة",
-        selena_title: "استشارية طبية مرخصة | أخصائية صحة الرجال",
-        selena_desc: "أكثر من عقد من الزمن أساعد فيه الرجال على التغلب على ضعف الانتصاب واستعادة ثقتهم بأنفسهم. كل رجل لديه ظروفه الخاصة، لذلك أخصص الوقت لفهم احتياجاتك المحددة ووضع خطة علاج مخصصة تعمل فعلاً.",
-        selena_cert1: "✓ ماجستير في الطب",
-        selena_cert2: "✓ معتمدة مجلس الإدارة",
-        selena_cert3: "✓ +10 سنوات خبرة",
-        stat_reviews: "قصص موثقة",
-        stat_clients: "رجل تمت مساعدته",
-        stat_rate: "معدل النجاح",
-        cod_badge: "الدفع عند الاستلام",
-        cod_title: "الدفع عند الاستلام",
-        cod_desc: "لا يوجد دفع مسبق. ادفع فقط عند استلام طلبك على باب منزلك.",
-        cod_subtitle: "طلب 100% بلا مخاطر",
-        cod_badge1: "شحن سري",
-        cod_badge2: "توصيل للمنزل",
-        cod_badge3: "الدفع عند الاستلام",
-        cod_feat1: "لا يُشترط دفع مسبق",
-        cod_feat2: "عبوة عادية سرية تماماً",
-        cod_feat3: "توصيل سريع إلى باب منزلك",
-        cod_feat4: "ادفع فقط عند الاستلام",
-        cod_feat5: "دعم واتساب 24/7",
-        cod_feat6: "سرية تامة مضمونة",
-        cod_feat7: "ضمان استرداد كامل خلال 90 يوماً بدون شروط",
-        cod_btn: "اطلب الآن عبر الواتساب",
-        reviews_title: "رجال حقيقيون يشاركون رحلتهم",
-        reviews_desc: "هذه قصص حقيقية من رجال عملوا معي للتغلب على تحدياتهم",
-        btn_start: "← ابدأ رحلتك اليوم",
-        team_title: "فريقنا الطبي المحترف",
-        team_desc: "فريق طبي متخصص ملتزم بمساعدتك على النجاح",
-        process_title: "رحلتك نحو الثقة",
-        step1_title: "استشارة خاصة",
-        step1_desc: "تواصل معي بسرية تامة وشارك مخاوفك. لا أحكام، فقط تفهم.",
-        step2_title: "خطة مخصصة",
-        step2_desc: "أضع لك خطة علاج مخصصة بناءً على وضعك الصحي الفريد.",
-        step3_title: "متابعة مستمرة",
-        step3_desc: "فحوصات دورية لتعديل علاجك والتأكد من تحقيق النتائج.",
-        step4_title: "استعادة حياتك",
-        step4_desc: "عُد لأن تكون الرجل الواثق الذي من المفترض أن تكونه.",
-        footer_tagline: "مساعدة الرجال على استعادة ثقتهم وحيويتهم",
-        footer_stories: "أكثر من 5,000 قصة نجاح وعدد متزايد",
-        footer_contact: "اتصل بنا",
-        footer_whatsapp: "واتساب: XXXXXXX",
-        footer_hours: "ساعات العمل: 9 صباحاً - 10 مساءً",
-        footer_promise: "وعدنا",
-        footer_copy: "© 2024 سيلينا هارفي | جميع القصص مشتركة بإذن | النتائج الفردية قد تختلف"
-      }
-    };
-
-    let currentLang = localStorage.getItem('lang') || 'en';
-
-    function switchLang(lang) {
-      currentLang = lang;
-      localStorage.setItem('lang', lang);
-      document.documentElement.lang = lang;
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-      updateContent();
-      updateLangButtons();
-    }
-
-    function updateContent() {
-      const elements = document.querySelectorAll('[data-i18n]');
-      elements.forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[currentLang] && translations[currentLang][key]) {
-          el.textContent = translations[currentLang][key];
-        }
-      });
-    }
-
-    function updateLangButtons() {
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.textContent.toLowerCase() === currentLang) {
-          btn.classList.add('active');
-        }
-      });
-    }
-
     function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('open');
+      document.getElementById('mobileMenu').classList.toggle('open');
     }
 
-    function showModal() {
-      document.getElementById('contactModal').classList.add('active');
+    function showModal(id) {
+      document.getElementById(id).classList.add('active');
     }
 
-    function hideModal() {
-      document.getElementById('contactModal').classList.remove('active');
+    function hideModal(id) {
+      document.getElementById(id).classList.remove('active');
     }
-
-    // Initialize
-    document.documentElement.lang = currentLang;
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    updateContent();
-    updateLangButtons();
   </script>
 </body>
 </html>
